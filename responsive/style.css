@@ -1,0 +1,605 @@
+* {
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    text-align: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    -webkit-text-size-adjust: %100;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+/* Lobotomized Owl selector: Anything adjacent to anything else gets a 1em effected*/
+
+* + * {
+    margin-top: 1em;
+}
+
+/*@font-face {
+    font-family: 'Bungee Regular';
+    src: url('./fonts/Bungee BETA/Bungee-Regular.otf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Bungee Outline';
+    src: url('./fonts/Bungee BETA/Bungee-Outline.otf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Bungee Shade';
+    src: url('./fonts/Bungee BETA/Bungee-Shade.otf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Bungee Inline';
+    src: url('./fonts/Bungee BETA/Bungee-Inline.otf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Viktor Script_Regular';
+    src:    url('./fonts/Viktor Script/Viktor_Script_web.eot');
+    src:    url('./fonts/Viktor Script/Viktor_Script_web.eot?#iefix') format('embedded-opentype'),
+            url('./fonts/Viktor Script/Viktor_Script_web.woff') format('woff'),
+            url('./fonts/Viktor Script/Viktor_Script_web.woff2') format('woff2'),
+            url('./fonts/Viktor Script/Viktor_Script_web.ttf') format('truetype'),
+            url('./fonts/Viktor Script/Viktor_Script_web.svg#svgFontName') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+
+body {
+    font-family: 'Fern Text', serif;
+    background-color: #FCFFE5;
+    margin-top: 0;
+    font-size: 17px;
+
+    font-variant-ligatures: common-ligatures;
+     -moz-font-feature-settings: "liga", "clig";
+     -webkit-font-feature-settings: "liga", "clig";
+     font-feature-settings: "liga", "clig";
+}
+
+section {
+
+}
+
+h2 {
+    font-family: 'Viktor Script', cursive, serif;
+    font-size: 2.1em;
+    text-align: center;
+    color: #5987B1;
+    margin-top: 0.2em;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Viktor Script', cursive, serif;
+    font-size: 2em;
+    padding-bottom: .4em;
+    letter-spacing: 0;
+}
+
+h4 {
+    border-top: 3px solid #C63A39;
+    text-align: center;
+    padding-top: 1em;
+    font-size: 1.1em;
+    width: 12.5em;
+    margin: 1em auto 0;
+    font-family: 'Bungee Regular';
+    color: #5987B1;
+}
+
+
+
+h4 > .byLine {
+    display: block;
+    font-weight: 100;
+    font-size: .8em;
+    font-family: 'Bungee Regular';
+    color: #333;
+}
+
+p {
+    color: #4E3D36;
+    line-height: 1.3em;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 3em;
+}
+
+tbody {
+    border-bottom: 4px solid #EADC77;
+    margin-bottom: 3em;
+}
+
+thead {
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+th {
+    padding: 10px;
+}
+
+tr {
+    border-top: 4px solid #EADC77;
+}
+
+
+.pepperHeat,
+.pepperSeason {
+    padding-left: 15px;
+}
+
+aside {
+    text-align: center;
+    position: relative;
+}
+
+.layerdContent {
+    position: relative;
+    width: 8em;
+    height: 10em;
+    margin: 0 auto;
+
+}
+
+.layerdContent > figcaption,
+.layerdContent > img {
+    position: absolute;
+}
+
+.layerdContent > img {
+    width: 8em;
+    z-index: 2;
+}
+
+.layerdContent > figcaption {
+    color: white;
+    font-family: 'Viktor Script';
+    text-align: center;
+    z-index: 3;
+    font-size: 1.9em;
+    top: 1.8em;
+    line-height: .95;
+    left: 1.05em;
+    width: 2em;
+    -webkit-transform: rotate(-12deg);
+    -moz-transform: rotate(-12deg);
+    -ms-transform: rotate(-12deg);
+}
+
+
+.wordBubble {
+    fill: #5987B1;
+}
+
+aside > p {
+    color: #fff;
+}
+
+footer {
+    background-color: #EADC77;
+    color: #4E3D36;
+    padding: 2em 3em 4em 2em;
+}
+
+footer li{;
+    position: relative;
+}
+
+footer li::before {
+    content: '->';
+    font-family: 'Viktor Script';
+    letter-spacing: 0;
+    font-size: 2em;
+    position: absolute;
+    left: -30px;
+    top: -10px;
+    color: #C63A39;
+    text-shadow: #5987B1 -2px 2px 0px;
+}
+
+#recipie aside > h3 {
+    color: #fff;
+    font-size: 2em;
+
+}
+
+.headlineContainer {
+    display: block;
+    position: relative;
+    text-align: center;
+    max-width: 35.1875em;
+    margin: 0 auto;
+}
+
+h1.emphasis {
+    font-family: 'Bungee Shade';
+    color: #5987B1;
+    font-size: 5em;
+}
+
+header.articleHeader {
+    background: #EADC77;
+    margin-bottom: 3em;
+    padding: 3em 2em;
+}
+
+
+h1.emphasis::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: attr(text);
+    font-family: 'Bungee Outline';
+    color: #EADC77;
+}
+
+h1.emphasis::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: attr(text);
+    font-family: 'Bungee Regular';
+    color: #C63A39;
+}
+
+.layeredImg {
+    background-image: url('./img/placeholder-header.png');
+    background-position: 50% 10%;
+    background-size: 176px;
+    background-repeat: no-repeat;
+    height: 260px;
+}
+
+
+
+blockquote {
+    font-family: 'Bungee Regular';
+    font-size: 1.8em;
+    line-height: 1em;
+    margin-bottom: 1em;
+    display: block;
+    color: #C63A39;
+background: -webkit-gradient(linear,left top,left bottom,from(#C63A39),to(#E39355));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dropCap-container {
+    position: relative;
+    display: block;
+    margin-left: .5em;
+}
+
+.dropCap {
+    float: left;
+    color: #456E93;
+    font-size: 4.1em;
+    line-height: .8em;
+    font-family: 'Bungee Shade';
+    padding-right: 5px;
+}
+
+.dropCap::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: attr(text);
+    font-family: 'Bungee Regular';
+    color: #C63A39;
+    text-align: center;
+}
+
+.dropCap::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: attr(text);
+    font-family: 'Bungee Outline';
+    color: #FCFFE5;
+    text-align: center;
+    text-shadow: #FCFFE5 -2px 2px 0px;
+    text-shadow: #FCFFE5 -1px 1px 0px;
+    text-shadow: #FCFFE5 -0px 0px 0px;
+}
+
+#aboutChilis p:first-child{
+    font-size: 1.2em;
+
+}
+
+#recipie {
+    color: #4C4C4C;
+}
+
+#recipie h3 {
+    font-family: 'Viktor Script';
+    text-align: center;
+    font-size: 1.5em;
+    color: #F03333;
+}
+
+#recipie ul {
+    text-align: center;
+}
+
+#ingredientList {
+    text-align: center;
+    margin-top: 3em;
+}
+
+#ingredientList h3 {
+    font-size: 2em;
+    color: #4E3D36;
+    border-bottom: solid 1px #EADC77;
+    padding-bottom: .4em;
+    letter-spacing: 0;
+}
+
+#ingredientList > li {
+    counter-increment: step-counter;
+    margin: 5em 0;
+}
+
+#ingredientList > li:first-of-type {
+    counter-increment: step-counter;
+    margin: 4% 0;
+}
+
+#ingredientList > li  p {
+    text-align: left;
+}
+
+
+#ingredientList li::before {
+    content: counter(step-counter);
+    display: inline-block;
+    font-family: 'Bungee Regular';
+    font-size: 3em;
+    height: 50px;
+    min-width: 42px;
+    margin-right: 5px;
+    border: 5px rgba(89, 135, 177, .8) solid;
+    color: #C63A39;
+    font-weight: bold;
+    padding: 0px 8px 10px 10px;
+    border-radius: 50px;
+    margin-bottom: .4em;
+
+
+    font-variant-numeric: lining-nums;
+     -moz-font-feature-settings: "lnum";
+     -webkit-font-feature-settings: "lnum";
+     font-feature-settings: "lnum";
+}
+
+#ingredients > ul > li {
+    text-align: left;
+    margin: 1em auto;
+    font-family: 'Fern RE';
+    font-style: italic;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+
+.quantityGroup {
+    width: 20%;
+    text-align: right;
+    color: #0E0E0E;
+}
+
+.quantity {
+    font-style: normal;
+}
+
+.ingredient {
+    margin: 0 1em;
+    max-width: 70%;
+    color: #4E3D36;
+}
+
+.content {
+    width: 90%;
+    max-width: 30em;
+    margin: 0 auto;
+    font-size: 1.05em;
+    letter-spacing: .005em;
+    line-height: 1.2;
+}
+
+
+
+.prepList {
+    text-align: center;
+    margin: 2em 0;
+    color: #441601;
+}
+
+.ingredientImg {
+    display: block;
+    width: 100%;
+}
+
+.pepperImg {
+    width: 90px;
+    height: 60px;
+    background-color: green;
+    margin: 8px auto;
+    opacity: .2;
+}
+
+.measurment {
+    font-family: 'Fern RE';
+    font-style: normal;
+}
+
+.viktorGlyph {
+    font-family: 'Viktor Script_Regular';
+}
+
+@media
+only screen and (max-width: 500px) {
+
+table, thead, tbody, th, td, tr {
+		display: block;
+	}
+
+    thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+    	tr {
+            margin: 10px 0;
+            padding: 4%;
+            text-align: center;
+            border-top: 4px solid #EADC77;
+            margin: 10px 0;
+            padding: 4%;
+         }
+
+        /*td {
+     Behave  like a "row"
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    }*/
+
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    .pepperName {
+        font-weight: 500;
+        font-size: 1.2em;
+    }
+
+    .pepperHeat,
+    .pepperSeason {
+        margin: 0 auto;
+        position: relative;
+        padding-top: 20px;
+        margin-top: 23px;
+        width: 148px;
+        display: inline-block;
+        vertical-align: top;
+        color: #C63A39;
+        font-size: 1.2em;
+    }
+
+    .pepperHeat::before,
+    .pepperSeason::before {
+            display: inline-block;
+            top: 0;
+            left: 37%;
+            content: attr(text);
+            width: 60px;
+            font-family: 'Fern Text';
+            color: #5F5f5f;
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: .05em;
+            font-size: 0.7em;
+    }
+
+
+    .pepperSeason {
+
+    }
+    .pepperSeason::before {
+        left: 32%;
+    }
+}
+
+
+@media (min-width: 600px) {
+    .content {
+        font-size: 1.2em;
+    }
+
+    .ingredientImg {
+        max-width: 52em;
+        margin: 3em auto;
+    }
+}
+
+@media (min-width: 800px) {
+    body {
+        /*font-size: 1.15em;*/
+    }
+}
+
+@media (min-width: 1100px) {
+    .content {
+        max-width: 34em;
+    }
+
+    p {
+        line-height: 1.3em;
+    }
+
+    .prepLayout {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+    }
+    .prepLayout > .prepList {
+        width: 30%;
+    }
+
+    .layerdContent {
+        position: relative;
+        width: 8em;
+        height: 10em;
+    }
+
+    footer {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+    }
+
+    footer .content {
+        margin-left: 1em;
+        width: 52%;
+        margin-left: 1em;
+    }
+
+    .layerdContent {
+        width: 0em;
+    }
+
+}
